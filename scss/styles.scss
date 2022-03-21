@@ -1,0 +1,56 @@
+@import "colors.scss";
+@mixin Center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -120%);
+}
+//Global
+* {
+  color: $color_4;
+  font-size: 1.2rem;
+}
+
+.container {
+  background-color: $color_1;
+  border: 1px solid #000;
+  display: flex;
+  height: 500px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 1em;
+  width: 50%;
+
+  .left {
+    background-color: $color_2;
+    height: 100%;
+    width: 69%;
+    position: relative;
+  }
+
+  .right {
+    background-color: $color_3;
+    height: 100%;
+    position: relative;
+    width: 29%;
+
+    .button {
+      background-color: $color_5;
+      color: $color_2;
+      border: 0;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 7em;
+      height: 2.5em;
+      font-size: 1rem;
+      font-weight: bold;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -120%);
+    }
+  }
+  p {
+    @include Center;
+  }
+}
