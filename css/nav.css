@@ -1,0 +1,11 @@
+/* Nest Nav */
+nav {
+  padding-bottom: 5px;
+  color: white; }
+  nav li {
+    display: inline-block; }
+  nav a {
+    display: block;
+    padding: 3px 6px;
+    text-decoration: none;
+    color: white; }

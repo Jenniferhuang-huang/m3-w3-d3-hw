@@ -1,42 +1,55 @@
-* {
-  color: #fff;
-  font-size: 1.2rem; }
+/* Variables */
+/* Nest Nav */
+nav {
+  padding-bottom: 5px;
+  color: white; }
+  nav li {
+    display: inline-block; }
+  nav a {
+    display: block;
+    padding: 3px 6px;
+    text-decoration: none;
+    color: white; }
 
-.container {
-  background-color: #f7eb80;
-  border: 1px solid #000;
+* {
+  background-color: #daaa0e; }
+
+/* Nest Main */
+main {
+  width: 1350px;
+  min-height: 535px;
   display: flex;
-  height: 500px;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 1em;
-  width: 50%; }
-  .container .left {
-    background-color: #6e7a5b;
-    height: 100%;
-    width: 69%;
-    position: relative; }
-  .container .right {
-    background-color: #a6ad80;
-    height: 100%;
-    position: relative;
-    width: 29%; }
-    .container .right .button {
-      background-color: #dcf829;
-      color: #6e7a5b;
-      border: 0;
-      border-radius: 10px;
-      cursor: pointer;
-      width: 7em;
-      height: 2.5em;
-      font-size: 1rem;
-      font-weight: bold;
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      transform: translate(-50%, -120%); }
-  .container p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -120%); }
+  align-items: center;
+  justify-content: center;
+  border: 10px solid white;
+  background-color: #d4d5d8; }
+  main span {
+    font-family: "Sacramento", cursive;
+    background-color: #d4d5d8;
+    font-size: 1.4rem; }
+  main h3 {
+    font-family: Arial, Helvetica, Sans-Serif;
+    background-color: #d4d5d8;
+    font-size: 1.8rem; }
+  main p {
+    font-family: Arial, Helvetica, Sans-Serif;
+    background-color: #d4d5d8; }
+  main button {
+    background-color: #daaa0e;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    width: 7em;
+    height: 2.5em; }
+  main #intro-text {
+    width: 700px;
+    float: left;
+    padding-left: 40px;
+    text-align: center;
+    background-color: #d4d5d8; }
+  main #intro-image img {
+    width: 850px; }
+
+footer {
+  padding-left: 40px;
+  padding-top: 15px; }

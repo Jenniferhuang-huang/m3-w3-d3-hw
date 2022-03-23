@@ -1,56 +1,65 @@
+/* Variables */
 @import "colors.scss";
-@mixin Center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -120%);
-}
-//Global
-* {
-  color: $color_4;
-  font-size: 1.2rem;
-}
-
-.container {
+@import "nav.scss";
+$font_Arial: Arial, Helvetica, Sans-Serif;
+$font_Sac: "Sacramento", cursive;
+@mixin button {
   background-color: $color_1;
-  border: 1px solid #000;
-  display: flex;
-  height: 500px;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 1em;
-  width: 50%;
+  color: $color_3;
+  border: 0;
+  cursor: pointer;
+  width: 7em;
+  height: 2.5em;
+}
 
-  .left {
-    background-color: $color_2;
-    height: 100%;
-    width: 69%;
-    position: relative;
+* {
+  background-color: $color_1;
+}
+/* Nest Main */
+main {
+  width: 1350px;
+  min-height: 535px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 10px solid $color_3;
+  background-color: $color_4;
+
+  span {
+    font-family: $font_Sac;
+    background-color: $color_4;
+    font-size: 1.4rem;
   }
 
-  .right {
-    background-color: $color_3;
-    height: 100%;
-    position: relative;
-    width: 29%;
+  h3 {
+    font-family: $font_Arial;
+    background-color: $color_4;
+    font-size: 1.8rem;
+  }
 
-    .button {
-      background-color: $color_5;
-      color: $color_2;
-      border: 0;
-      border-radius: 10px;
-      cursor: pointer;
-      width: 7em;
-      height: 2.5em;
-      font-size: 1rem;
-      font-weight: bold;
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      transform: translate(-50%, -120%);
+  p {
+    font-family: $font_Arial;
+    background-color: $color_4;
+  }
+
+  // Mixin or Extend for button
+  button {
+    @include button;
+  }
+  #intro-text {
+    width: 700px;
+    float: left;
+    padding-left: 40px;
+    text-align: center;
+    background-color: $color_4;
+  }
+  #intro-image {
+    img {
+      width: 850px;
     }
   }
-  p {
-    @include Center;
-  }
+}
+footer {
+  padding-left: 40px;
+  padding-top: 15px;
 }

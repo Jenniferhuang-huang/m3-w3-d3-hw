@@ -1,0 +1,15 @@
+@import "colors.scss";
+/* Nest Nav */
+nav {
+  padding-bottom: 5px;
+  color: $color-3;
+  li {
+    display: inline-block;
+  }
+  a {
+    display: block;
+    padding: 3px 6px;
+    text-decoration: none;
+    color: $color-3;
+  }
+}
